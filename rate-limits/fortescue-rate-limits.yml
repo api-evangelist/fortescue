@@ -1,0 +1,6 @@
+name: Fortescue rate limits
+generated: '2026-10-21'
+method: none
+limit_count: 0
+note: No public API and no API documentation exist, so no rate limits are published.
+limits: []

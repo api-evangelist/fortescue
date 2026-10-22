@@ -1,0 +1,10 @@
+name: Fortescue packages
+generated: '2026-10-21'
+method: none
+note: No first-party SDK, CLI or client library found. Fortescue publishes no developer portal or API documentation (pre-flight contract discovery absent on all fortescue.com hosts); registry probes registry.npmjs.org/fortescue and pypi.org/pypi/fortescue/json both returned 404; a web search for Fortescue developer API/SDK returned only unrelated similarly named companies (Forte, Fortis, Fortanix).
+checked:
+- url: https://registry.npmjs.org/fortescue
+  status: 404
+- url: https://pypi.org/pypi/fortescue/json
+  status: 404
+packages: []

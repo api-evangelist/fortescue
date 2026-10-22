@@ -1,0 +1,77 @@
+generated: '2026-10-21'
+method: searched
+probe: true
+source: https://www.fortescue.com/en/privacy/general
+notes: >-
+  Fortescue (Fortescue Ltd, ASX-listed mining, energy and technology group) publishes a privacy hub at
+  /en/privacy linking a General Privacy Policy and nine audience-specific notices. The General Privacy Policy and the
+  Website & App Users notice were read. No trust centre, subprocessor page, accessibility statement, AI disclosure
+  or transparency report was found, and the preflight dossier recorded no legal_pages.
+signals:
+  data_subject_request:
+    url: https://www.fortescue.com/en/privacy/general
+    section: Your rights & choices
+    rights_named: [access, correction, erasure, restriction, portability, objection, withdrawal of consent]
+    escalation: Office of the Australian Information Commissioner (OAIC); UK/EU/EEA supervisory authority (UK ICO)
+    evidence:
+    - source: https://www.fortescue.com/en/privacy/general
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "You can request access to, or correction of, your personal information. Depending on your location, you may also have rights to erasure, restriction, portability, objection (including to direct marketing) and to withdraw consent. To exercise your rights, contact the Privacy Office."
+    - source: https://www.fortescue.com/en/privacy/general
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "We may ask you to verify your identity before we action a request. For archived or off‑site records, we may charge a reasonable cost‑recovery fee."
+    - source: https://www.fortescue.com/en/privacy/general
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "If you would like to complain about our handling of your personal information, please write to our Privacy Office (email is fine). We aim to respond within 30 days."
+    note: >-
+      Access and correction are offered to everyone. Erasure, restriction, portability and objection depend on where
+      the person is located. Requests go to the Privacy Office (privacy@fortescue.com) and may need identity
+      verification and a cost-recovery fee. The 30-day response aim is stated for complaints, not explicitly for rights requests.
+  data_residency:
+    url: https://www.fortescue.com/en/privacy/general
+    section: International transfers
+    regions: [Australia, United Kingdom, European Economic Area, United States, Singapore]
+    evidence:
+    - source: https://www.fortescue.com/en/privacy/general
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "We primarily store personal information in Australia. We also transfer and disclose personal information internationally, including to recipients in the United Kingdom, the European Economic Area (EEA), the United States, Singapore, and to other Fortescue Group companies in countries where we operate."
+    - source: https://www.fortescue.com/en/privacy/general
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "Where we transfer information across borders, we do so in line with applicable laws and with appropriate safeguards (for example, adequacy decisions or standard contractual clauses/UK IDTA)."
+    note: >-
+      Australia is the main storage location, and the policy names the overseas recipient regions and the transfer
+      safeguards (adequacy decisions, SCCs, UK IDTA). It makes no data-residency commitment and offers no choice of region.
+  subprocessors:
+    url: https://www.fortescue.com/en/privacy/general
+    section: International transfers
+    evidence:
+    - source: https://www.fortescue.com/en/privacy/general
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "You can contact the Privacy Office for an up‑to‑date list of our key service providers, hosting locations, and Fortescue Group companies that may receive your information."
+    - source: https://www.fortescue.com/en/privacy/general
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "We do not sell personal information or disclose it for third‑party marketing."
+    note: >-
+      No subprocessor list is published. A list of key service providers and hosting locations is available only on
+      request. The policy names categories of recipients, such as IT, hosting, security and analytics service providers.
+  data_retention:
+    url: https://www.fortescue.com/en/privacy/general
+    section: How long we keep information
+    evidence:
+    - source: https://www.fortescue.com/en/privacy/general
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "We keep personal information for as long as needed to achieve the purposes above (or in an audience-specific privacy notice) and to meet legal, regulatory and reporting requirements."
+    - source: https://www.fortescue.com/en/privacy/website-and-app-users
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: "We keep information for as long as necessary given the purposes for which it was collected."
+    note: >-
+      Retention is tied to purpose and legal requirements. No fixed retention periods are published in either document.

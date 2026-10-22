@@ -1,0 +1,19 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/fortescue/integrations
+- https://n8n.io/integrations/fortescue/
+- https://composio.dev/toolkits/fortescue
+- https://monid.ai/tools/fortescue
+checked:
+- https://zapier.com/apps/fortescue/integrations
+- https://n8n.io/integrations/fortescue/
+- https://www.make.com/en/integrations/fortescue
+- https://www.fortescue.com/en
+- https://composio.dev/toolkits/fortescue
+- https://monid.ai/tools/fortescue
+summary: Fortescue is a mining, energy and metals group with no public API, developer portal or integrations/partner-app
+  page; no marketplace listing found.
+marketplace_apps: []
+edges: []
+templates: []

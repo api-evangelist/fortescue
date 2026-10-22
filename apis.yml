@@ -1,23 +1,95 @@
 aid: fortescue
+
 name: Fortescue
-description: 'Fortescue is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Fortescue (Fortescue Ltd, ASX: FMG) describes itself as the technology, energy and metals group accelerating commercial decarbonisation of industry, rapidly, profitably and globally. Headquartered in Western Australia, it operates iron ore mining, rail and port operations in the Pilbara, alongside green energy, green metals and Fortescue Zero technology businesses. Its public web estate (fortescue.com, investors, careers, suppliers, capital and zero subdomains) publishes no developer portal, API documentation or public API. Surfaced via the API Evangelist harvest backlog (australia-apidays-2026).'
+
 url: https://raw.githubusercontent.com/api-evangelist/fortescue/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Mining
+- Iron Ore
+- Metals
+- Energy
+- Decarbonisation
+- Green Hydrogen
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.fortescue.com/apple-touch-icon.png
+
 common:
+- type: Hosts
+  url: hosts/fortescue-hosts.yml
+- type: Vendors
+  url: vendors/fortescue-vendors.yml
+- type: DomainSecurity
+  url: security/fortescue-domain-security.yml
 - type: Website
   url: https://fortescue.com/
+- type: Newsroom
+  url: https://fortescue.com/en/articles
+- type: Support
+  url: https://fortescue.com/en/contact
+- type: TermsOfService
+  url: https://fortescue.com/en/terms
+- type: PrivacyPolicy
+  url: https://www.fortescue.com/en/privacy
+- type: Careers
+  url: https://careers.fortescue.com/en/
+- type: InvestorRelations
+  url: https://investors.fortescue.com/en/
+- type: LinkedIn
+  url: https://au.linkedin.com/company/fortescue
+- type: X
+  url: https://x.com/FortescueGlobal
+- type: YouTube
+  url: https://www.youtube.com/user/FortescueMetalsGroup
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website verified (title "Fortescue", og:description self-identifies). No developer portal, API docs, GitHub org (github.com/fortescue is an unrelated user f4tq2) or public API found; link pointers taken from site footer/nav.
+  evidence:
+  - url: https://www.fortescue.com/en
+    status: 200
+  - url: https://fortescue.com/en/contact
+    status: 200
+  - url: https://fortescue.com/en/terms
+    status: 200
+  - url: https://www.fortescue.com/en/privacy
+    status: 200
+  - url: https://careers.fortescue.com/
+    status: 200
+  - url: https://investors.fortescue.com/
+    status: 200
+  - url: https://github.com/fortescue
+    status: 200
+    note: not the company
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

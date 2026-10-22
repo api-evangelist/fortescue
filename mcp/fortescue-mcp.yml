@@ -1,0 +1,21 @@
+name: Fortescue MCP Server
+type: MCPServer
+generated: '2026-10-21'
+method: none
+status: absent
+description: >-
+  No official Fortescue MCP server (hosted or local) was found, and no candidate tool
+  list could be derived because Fortescue publishes no OpenAPI or other API contract.
+  Pre-flight contract discovery on api.fortescue.com, fortescue.com, capital.fortescue.com,
+  careers.fortescue.com and fy26sustainability.fortescue.com found no OpenAPI, AsyncAPI,
+  GraphQL or MCP surface, and a web search for a Fortescue MCP server or developer API
+  returned nothing from the company.
+checked:
+  - preflight contract_discovery (2026-10-21): openapi/asyncapi/graphql/mcp all absent
+  - https://fortescue.com/llms.txt -> 404
+  - 'web search: "Fortescue MCP server OR developer API fortescue.com" -> no provider result'
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
